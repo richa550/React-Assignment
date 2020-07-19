@@ -21,10 +21,11 @@ function App() {
       <div className="row">
         <div className="col s12">
          <Switch>
-           <Route path="/React-Assignment"  component={Home} exact />
+           <Route path="/"  component={Home} exact />
            <Route path = "/React-Assignment/conditionalRendering" component = {conditionalRendering} />
             <Route path = "/React-Assignment/user" component = {Users} />
             <Route path = "/React-Assignment/redux" component = {ReduxEx} />
+            <Route component={Home} />
           </Switch>
           </div>
           </div>
