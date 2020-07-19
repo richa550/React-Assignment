@@ -5,7 +5,7 @@ import ReduxEx2 from './reduxEx2'
 
 function ReduxEx() {
   const intialState= {
-    age:21
+    age:20
   };
 
   const myReducer = (state = intialState ,action) => {
@@ -29,10 +29,14 @@ function ReduxEx() {
   store.dispatch({type: 'SUB', val: 10});
  
   return (
-    <div>
-      <SectionHeading heading="Redux Example 1" />
-      <h6>Example 1 of Redux output showing in console , pls see the console.</h6>
+    <div className="mt-40">
       <ReduxEx2 />
+      <SectionHeading heading="Redux Example 2" />
+      <h5>Set Default Age : 20 Then Called Dispatched 2 action:: 1 for adding age by 5 and another action subtracting age by 10</h5>
+      <h5 className="mb-15"> Output is: 25 and 15 Redux output showing in console , pls see the console</h5>
+    
+
+   
     </div>
    );
 }

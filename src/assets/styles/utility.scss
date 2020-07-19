@@ -17,6 +17,12 @@ body {
 .mb-15 {
     margin-bottom: 15px;
 }
+.mt-20 {
+    margin-top: 15px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
 .b{
     font-weight: bold;
 }
@@ -26,4 +32,7 @@ body {
 .nav-wrapper .input-field input[type=search] {
     height: auto;
    
+}
+select{
+    display: inline-block;
 }

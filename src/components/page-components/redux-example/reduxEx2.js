@@ -7,10 +7,10 @@ class ReduxEx2 extends React.Component {
     render() {
       return (
         <div>
-          <SectionHeading heading="Redux Example 2" />  
-            <h6>Value: {this.props.value}</h6>
-            <button className="btn-small mb-15" onClick={this.props.handleIncrement}>Increment</button>
-            <button className="btn-small mb-15 ml-10" onClick={this.props.handleDecrement}>Decrement</button>
+          <SectionHeading heading="Redux Example 1"  />  
+            <h4 className="mb-15 mt-20">Value: {this.props.value}</h4>
+            <button className="btn-large mb-15" onClick={this.props.handleIncrement}>Increment</button>
+            <button className="btn-large mb-15 ml-10" onClick={this.props.handleDecrement}>Decrement</button>
         </div>
       
       );
@@ -25,7 +25,7 @@ class ReduxEx2 extends React.Component {
 const mapDispatchToProps = (dispatch) =>{
   return{
     handleIncrement: () => dispatch({type: "INCREMENT"}),
-    handleDecrement: () => dispatch({type: "DECREMENT"})
+    handleDecrement: () => dispatch({type: "DECREMENT"}),
   }
 };
 
