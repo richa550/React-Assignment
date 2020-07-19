@@ -5,7 +5,7 @@ const HeaderNavigation= () => {
     return (
         <div>
         <ul className="center hide-on-med-and-down">        
-                <li className="active"><Link to= "React-Assignment">Home</Link></li>
+                <li className="active"><Link to= "/">Home</Link></li>
                 <li><Link to= "/React-Assignment/conditionalRendering">Conditional Rendering Example</Link></li>
                 <li><Link to= "/React-Assignment/user">API Example</Link></li>
                 <li><Link to= "/React-Assignment/redux">Redux Example</Link></li>
