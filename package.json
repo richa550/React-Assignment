@@ -1,5 +1,5 @@
 {
-  "homepage":"http://richa550.github.io/Assignment-React",
+  "homepage":"http://richa550.github.io/React-Assignment",
   "name": "react-assignment",
   "version": "0.1.0",
   "private": true,
@@ -18,8 +18,8 @@
     "redux": "^4.0.5"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
