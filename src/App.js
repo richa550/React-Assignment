@@ -21,7 +21,7 @@ function App() {
       <div className="row">
         <div className="col s12">
          <Switch>
-           <Route path="/"  component={Home} exact />
+           <Route path="/React-Assignment"  component={Home} exact />
            <Route path = "/conditionalRendering" component = {conditionalRendering} />
             <Route path = "/user" component = {Users} />
             <Route path = "/redux" component = {ReduxEx} />

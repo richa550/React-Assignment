@@ -7,12 +7,12 @@ function Users() {
   const [result, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://dummy.restapiexample.com/api/v1/employees")
+    fetch("https://jsonplaceholder.typicode.com/users")
       .then(res => res.json())
       .then(
         (result) => {
           setIsLoaded(true);
-          setItems(result.data);
+          setItems(result);
           console.log("result",result)
         },
         (error) => {
@@ -30,10 +30,10 @@ function Users() {
     return (
       <div className="row">       
          <SectionHeading heading="API Example" />  
-         <div className="col s12 l6">
+         <div className="col s12">
             <ul className="user-data">
               {result.map((item, key) =>
-              <li key={item.id}><span className="b">ID: </span>{item.id}<span className="b ml-10">Name:</span> {item.employee_name}<span className="b ml-10">Age: </span>{item.employee_age}<span className="b ml-10">Salary: </span>{item.employee_salary}</li>    
+              <li key={item.id}><span className="b">ID: </span>{item.id}<span className="b ml-10">Name:</span> {item.name}<span className="b ml-10">Email: </span>{item.email}<span className="b ml-10">Phone: </span>{item.phone}</li>    
               )}
             </ul>
          </div>
